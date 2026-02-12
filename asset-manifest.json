@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/game-rock-scissors-paper/static/css/main.1a0fddec.chunk.css",
+    "main.js": "/game-rock-scissors-paper/static/js/main.37096282.chunk.js",
+    "main.js.map": "/game-rock-scissors-paper/static/js/main.37096282.chunk.js.map",
+    "runtime-main.js": "/game-rock-scissors-paper/static/js/runtime-main.acfcad30.js",
+    "runtime-main.js.map": "/game-rock-scissors-paper/static/js/runtime-main.acfcad30.js.map",
+    "static/js/2.a63da593.chunk.js": "/game-rock-scissors-paper/static/js/2.a63da593.chunk.js",
+    "static/js/2.a63da593.chunk.js.map": "/game-rock-scissors-paper/static/js/2.a63da593.chunk.js.map",
+    "index.html": "/game-rock-scissors-paper/index.html",
+    "precache-manifest.944742d3c1bfe09403d7694365759cf3.js": "/game-rock-scissors-paper/precache-manifest.944742d3c1bfe09403d7694365759cf3.js",
+    "service-worker.js": "/game-rock-scissors-paper/service-worker.js",
+    "static/css/main.1a0fddec.chunk.css.map": "/game-rock-scissors-paper/static/css/main.1a0fddec.chunk.css.map",
+    "static/js/2.a63da593.chunk.js.LICENSE.txt": "/game-rock-scissors-paper/static/js/2.a63da593.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.acfcad30.js",
+    "static/js/2.a63da593.chunk.js",
+    "static/css/main.1a0fddec.chunk.css",
+    "static/js/main.37096282.chunk.js"
+  ]
+}
