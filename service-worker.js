@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/game-rock-scissors-paper/precache-manifest.9862ad7382002798522e07853c6389f9.js"
+  "/game-rock-scissors-paper/precache-manifest.149957217338d76fbe466db9f8d0486e.js"
 );
 
 self.addEventListener('message', (event) => {

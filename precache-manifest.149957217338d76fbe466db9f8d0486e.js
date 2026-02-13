@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8986798f7cd643f5e264f9bf9a9c2494",
+    "revision": "b0277751685b238e9804c9fe2108aa07",
     "url": "/game-rock-scissors-paper/index.html"
   },
   {
-    "revision": "756d55c4ca202361a17d",
-    "url": "/game-rock-scissors-paper/static/css/main.f0e8a4b6.chunk.css"
+    "revision": "6bae2b40c5bf36c6a6c7",
+    "url": "/game-rock-scissors-paper/static/css/main.a70d96f0.chunk.css"
   },
   {
     "revision": "1618da1407d8bfde7de8",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game-rock-scissors-paper/static/js/2.a63da593.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "756d55c4ca202361a17d",
-    "url": "/game-rock-scissors-paper/static/js/main.3b073387.chunk.js"
+    "revision": "6bae2b40c5bf36c6a6c7",
+    "url": "/game-rock-scissors-paper/static/js/main.eaf1b4ae.chunk.js"
   },
   {
     "revision": "188e06a3102c88f51c17",
