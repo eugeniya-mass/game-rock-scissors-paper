@@ -117,26 +117,17 @@ function App() {
         }
 
 
-        {
-          gameElements.length === 0 ? 
+        { gameElements.length === 0 ?
           <div className="button-box">
             <div className="button" onClick={() => handleClickLevel('easy')}>Simple game</div>
             <div className="button" onClick={() => handleClickLevel('bonus')}>Bonus game</div>
-        </div> : ''
-        }
+        </div> : '' }
 
-        {
-          gameElements.length === 0 ? '' : <Footer show={handleClickModal} goMenu={handleClickReturnMenu} />
-        }
+        { gameElements.length === 0 ? '' : <Footer show={handleClickModal} goMenu={handleClickReturnMenu} /> }
           
       </div>
 
-      {
-        show ?
-         ''
-        : 
-       <Modal show={handleClickModal} rule={gameElements.length} />
-      }
+      { show ? '' : <Modal show={handleClickModal} rule={gameElements.length} /> }
 
     </div>
   );

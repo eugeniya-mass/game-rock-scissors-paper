@@ -35,7 +35,7 @@ $f-weight-bold: 700;
         .close {
             margin-top: 11px;
             cursor: pointer;
-            background: url(/assets/images/icon-close.svg);
+
             width: 20px;
             height: 20px;
             background-position: center;
@@ -52,7 +52,7 @@ $f-weight-bold: 700;
             &.triagle {
                 margin: 5px;
                 height: 299px;
-                background: url(/assets/images/image-rules.svg);
+
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -61,7 +61,7 @@ $f-weight-bold: 700;
             &.pentagon {
                 margin: 5px;
                 height: 335px;
-                background: url(/assets/images/image-rules-bonus.svg);
+
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;

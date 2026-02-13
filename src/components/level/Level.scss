@@ -24,320 +24,335 @@ $col-fiolet-2: hsl(261, 72%, 63%);
 $f-weight-normal: 600;
 $f-weight-bold: 700;
 
-
 .game {
-    padding: 18px 15px;
-    width: 100%;
+  padding: 18px 15px;
+  width: 100%;
 
-    &__box {
-        margin: 46px auto 0;
-        width: 470px;
-        height: 424px;
-        background-repeat: no-repeat;
+  &__box {
+    margin: 46px auto 0;
+    width: 470px;
+    height: 424px;
+    background-repeat: no-repeat;
 
-        &.triangle {
-            background-position: 85px 91px;
-            background-image: url(/assets/images/bg-triangle.svg);
+    &.triangle {
+      background-position: 85px 91px;
 
-            .circle {
-                &.scissors {
-                    float: right;
-                    margin-top: 27px;
-                    margin-right: 136px;
-                    animation: 1s linear 0s scissors-tr;
-                }
-                &.paper {
-                    float: right;
-                    animation: 1s linear 0s paper-tr;
-                }
-    
-                &.rock {
-                    float: left;
-                    animation: 1s linear 0s rock-tr;
-                }
-            }
-        }
-
-        &.pentagon {
-            margin: 29px auto 0;
-            background-position: 64px 62px;
-            background-image: url(/assets/images/bg-pentagon.svg);
-
-            .circle {
-                padding-top: 18px;
-                width: 145px;
-                height: 145px;
-
-                &:after {
-                    margin: 0px 18px;
-                    width: 110px;
-                    height: 110px;
-                }
-
-                &:before {
-                    width: 49px;
-                    height: 49px;
-                }
-
-                &.rock:before {
-                    height: 49px;
-                }
-
-                &.paper:before {
-                    height: 60px;
-                }
-
-                &.scissors:before {
-                    height: 58px;
-                }
-
-                &.lizard:before {
-                    height: 47px;
-                }
-
-                &.spock:before {
-                    height: 64px;
-                }
-
-                &.rock {
-                    margin: 0 auto;
-                    animation: 1s linear 0s rock-pent;
-                }
-                &.paper {
-                    float: left;
-                    margin-top: -16px;
-                    animation: 1s linear 0s paper-pent;
-                }
-    
-                &.scissors {
-                    margin-top: -16px;
-                    float: right;
-                    animation: 1s linear 0s scissors-pent;
-                }
-
-                &.lizard {
-                    margin-top: 168px;
-                    margin-left: 63px;
-                    animation: 1s linear 0s lizard-pent;
-                }
-
-                &.spock {
-                    float: right;
-                    margin-top: -146px;
-                    margin-right: 66px;
-                    animation: 1s linear 0s spock-pent;
-                }
-            }
-        }
-    }
-
-    .message {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        animation: 2s linear 0s message;
-
-        &.mob {
-            display: none;
-        }
-
-        button {
-            cursor: pointer;
-            margin-top: 12px;
-            height: 40px;
-            border-radius: 6px;
-            background-color: #fff;
-            text-transform: uppercase;
-            border: none;
-
-            &:hover {
-                color: $col-red-1;
-            }
-
-            &:focus {
-                outline: none;
-            }
-        }
-    }
-
-    .circle {
-        position: relative;
-        cursor: pointer;
-        padding-top: 32px;
-        width: 196px;
-        height: 191px;
-        border-radius: 50%;
-
-        &:after {
-            position: absolute;
-            content: '';
-            margin: 0 25px;
-            width: 145px;
-            height: 138px;
-            border-radius: 50%;
-            background-color: #fff;
-            -webkit-box-shadow: 0px -8px 0px 0px rgba(219,217,218,1);
-            -moz-box-shadow: 0px -8px 0px 0px rgba(219,217,218,1);
-            box-shadow: 0px -8px 0px 0px rgba(219,217,218,1);
-        }
-
-        &:before {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            content: '';
-            transform: translate(-50%,-50%);
-            width: 66px;
-            height: 80px;
-            background-position: center;
-            background-size: cover;
-            z-index: 1;
-        }
-
-        &.scissors:before {
-            height: 75px;
-            background-image: url(/assets/images/icon-scissors.svg);
-        }
-
-        &.paper:before {
-            background-image: url(/assets/images/icon-paper.svg);
-        }
-
-        &.rock:before {
-            height: 66px;
-            background-image: url(/assets/images/icon-rock.svg);
-        }
-
-        &.spock:before {
-            height: 86px;
-            background-image: url(/assets/images/icon-spock.svg);
-        }
-
-        &.lizard:before {
-            height: 62px;
-            background-image: url(/assets/images/icon-lizard.svg);
-        }
-
-        &:active {
-            transition: 1s;
-            transform: scale(1.1);
-        }
-
+      .circle {
         &.scissors {
-            background: linear-gradient(180deg, $col-orange-1 50%, $col-orange-2 100%);
-            -webkit-box-shadow: 0px 8px 0px 0px rgba(199,106,28,1);
-            -moz-box-shadow: 0px 8px 0px 0px rgba(199,106,28,1);
-            box-shadow: 0px 8px 0px 0px rgba(199,106,28,1);
+          float: right;
+          margin-top: 27px;
+          margin-right: 136px;
+          animation: 1s linear 0s scissors-tr;
         }
-
         &.paper {
-            background: linear-gradient(180deg, $col-blue-1 50%, $col-blue-2 100%);
-            -webkit-box-shadow: 0px 8px 0px 0px rgba(41,69,192,1);
-            -moz-box-shadow: 0px 8px 0px 0px rgba(41,69,192,1);
-            box-shadow: 0px 8px 0px 0px rgba(41,69,192,1);
+          float: right;
+          animation: 1s linear 0s paper-tr;
         }
 
         &.rock {
-            background: linear-gradient(180deg, $col-red-1 50%, $col-red-2 100%);
-            -webkit-box-shadow: 0px 8px 0px 0px rgba(156,22,49,1);
-            -moz-box-shadow: 0px 8px 0px 0px rgba(156,22,49,1);
-            box-shadow: 0px 8px 0px 0px rgba(156,22,49,1);
+          float: left;
+          animation: 1s linear 0s rock-tr;
+        }
+      }
+    }
+
+    &.pentagon {
+      margin: 29px auto 0;
+      background-position: 64px 62px;
+
+      .figure {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 49px;
+        height: 49px;
+        z-index: 1;
+      }
+
+      .circle {
+        padding-top: 18px;
+        width: 145px;
+        height: 145px;
+
+        &:after {
+          margin: 0 18px;
+          width: 110px;
+          height: 110px;
         }
 
-        &.spock {
-            background: linear-gradient(180deg, $col-blue-s-1 50%, $col-blue-s-2 100%);
-            -webkit-box-shadow: 0px 8px 0px 0px rgba(45,140,170,1);
-            -moz-box-shadow: 0px 8px 0px 0px rgba(45,140,170,1);
-            box-shadow: 0px 8px 0px 0px rgba(45,140,170,1);
+        &.rock .figure {
+          height: 49px;
+        }
+
+        &.paper .figure {
+          height: 60px;
+        }
+
+        &.scissors .figure {
+          height: 58px;
+        }
+
+        &.lizard .figure {
+          height: 63px;
+          width: 65px;
+        }
+
+        &.spock .figure {
+          height: 64px;
+        }
+
+        &.rock {
+          margin: 0 auto;
+          animation: 1s linear 0s rock-pent;
+        }
+
+        &.paper {
+          float: left;
+          margin-top: -16px;
+          animation: 1s linear 0s paper-pent;
+        }
+
+        &.scissors {
+          margin-top: -16px;
+          float: right;
+          animation: 1s linear 0s scissors-pent;
         }
 
         &.lizard {
-            background: linear-gradient(180deg, $col-fiolet-1 50%, $col-fiolet-2 100%);
-            -webkit-box-shadow: 0px 8px 0px 0px rgba(92,60,159,1);
-            -moz-box-shadow: 0px 8px 0px 0px rgba(92,60,159,1);
-            box-shadow: 0px 8px 0px 0px rgba(92,60,159,1);
+          margin-top: 168px;
+          margin-left: 63px;
+          animation: 1s linear 0s lizard-pent;
         }
 
+        &.spock {
+          float: right;
+          margin-top: -146px;
+          margin-right: 66px;
+          animation: 1s linear 0s spock-pent;
+        }
+      }
+    }
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    animation: 2s linear 0s message;
+
+    &.mob {
+      display: none;
     }
 
-    .field {
-        max-width: 946px;
-        margin: 24px auto 0;
-        display: flex;
-        justify-content: space-between;
-        padding: 31px 0;
+    button {
+      cursor: pointer;
+      margin-top: 12px;
+      height: 40px;
+      border-radius: 6px;
+      background-color: #fff;
+      text-transform: uppercase;
+      border: none;
 
-        .title {
-            color: $col-white;
-            font-size: 28px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-align: center;
-        }
+      &:hover {
+        color: $col-red-1;
+      }
 
-        .message {
-            margin-top: 57px;
-
-            .title {
-                font-size: 56px;
-            }
-            button {
-                margin-top: 18px;
-                font-size: 15px;
-                letter-spacing: 2px;
-                font-weight: $f-weight-bold;
-            }
-        }
-
-        .circle {
-            padding-top: 42px;
-            margin-top: 61px;
-            width: 295px;
-            height: 288px;
-            background-color: #fff;
-            border-radius: 50%;
-
-            &:after {
-                margin: 0 33px;
-                width: 227px;
-                height: 214px;            
-            }
-
-            &:before {
-                width: 108px;
-                height: 108px;
-            }
-
-            &.scissors:before {
-                height: 122px;
-            }
-
-            &.paper:before {
-                height: 130px;
-            }
-
-            &.lizard:before {
-                height: 105px;
-            }
-
-            &.spock:before {
-                height: 138px;
-            }
-
-            &.first {
-                animation: .5s linear 0s first-game;
-            }
-
-            &.second {
-                animation: 1s linear 0s second-game;
-            }
-        }
+      &:focus {
+        outline: none;
+      }
     }
+  }
+
+  .circle {
+    position: relative;
+    cursor: pointer;
+    padding-top: 32px;
+    width: 196px;
+    height: 191px;
+    border-radius: 50%;
+
+    &:after {
+      position: absolute;
+      content: '';
+      margin: 0 25px;
+      width: 145px;
+      height: 138px;
+      border-radius: 50%;
+      background-color: #fff;
+      -webkit-box-shadow: 0px -8px 0px 0px rgba(219,217,218,1);
+      -moz-box-shadow: 0px -8px 0px 0px rgba(219,217,218,1);
+      box-shadow: 0px -8px 0px 0px rgba(219,217,218,1);
+    }
+
+    .figure {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      transform: translate(-50%,-50%);
+      width: 66px;
+      height: 80px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1;
+    }
+
+    &.scissors .figure {
+      height: 75px;
+    }
+
+    &.rock .figure {
+      height: 66px;
+    }
+
+    &.spock .figure {
+      height: 86px;
+    }
+
+    &.lizard .figure {
+      height: 62px;
+    }
+
+    &:active {
+      transition: 1s;
+      transform: scale(1.1);
+    }
+
+    &.scissors {
+      background: linear-gradient(180deg, $col-orange-1 50%, $col-orange-2 100%);
+      -webkit-box-shadow: 0 8px 0 0 rgba(199,106,28,1);
+      -moz-box-shadow: 0 8px 0 0 rgba(199,106,28,1);
+      box-shadow: 0 8px 0 0 rgba(199,106,28,1);
+    }
+
+    &.paper {
+      background: linear-gradient(180deg, $col-blue-1 50%, $col-blue-2 100%);
+      -webkit-box-shadow: 0 8px 0 0 rgba(41,69,192,1);
+      -moz-box-shadow: 0 8px 0 0 rgba(41,69,192,1);
+      box-shadow: 0 8px 0 0 rgba(41,69,192,1);
+    }
+
+    &.rock {
+      background: linear-gradient(180deg, $col-red-1 50%, $col-red-2 100%);
+      -webkit-box-shadow: 0 8px 0 0 rgba(156,22,49,1);
+      -moz-box-shadow: 0 8px 0 0 rgba(156,22,49,1);
+      box-shadow: 0 8px 0 0 rgba(156,22,49,1);
+    }
+
+    &.spock {
+      background: linear-gradient(180deg, $col-blue-s-1 50%, $col-blue-s-2 100%);
+      -webkit-box-shadow: 0 8px 0 0 rgba(45,140,170,1);
+      -moz-box-shadow: 0 8px 0 0 rgba(45,140,170,1);
+      box-shadow: 0 8px 0 0 rgba(45,140,170,1);
+    }
+
+    &.lizard {
+      background: linear-gradient(180deg, $col-fiolet-1 50%, $col-fiolet-2 100%);
+      -webkit-box-shadow: 0 8px 0 0 rgba(92,60,159,1);
+      -moz-box-shadow: 0 8px 0 0 rgba(92,60,159,1);
+      box-shadow: 0 8px 0 0 rgba(92,60,159,1);
+    }
+  }
+
+  .field {
+    max-width: 946px;
+    margin: 24px auto 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 31px 0;
+
+    .title {
+      color: $col-white;
+      font-size: 28px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    .message {
+      margin-top: 57px;
+      .title {
+        font-size: 56px;
+      }
+      button {
+        margin-top: 18px;
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: $f-weight-bold;
+      }
+    }
+
+    .circle {
+      padding-top: 42px;
+      margin-top: 61px;
+      width: 295px;
+      height: 288px;
+      background-color: #fff;
+      border-radius: 50%;
+
+      &:after {
+        margin: 0 33px;
+        width: 227px;
+        height: 214px;
+      }
+
+      .figure {
+        width: 108px;
+        height: 108px;
+      }
+
+      &.scissors .figure  {
+        height: 122px;
+      }
+
+      &.paper .figure {
+        height: 130px;
+      }
+
+      &.lizard .figure {
+        height: 105px;
+      }
+
+      &.spock .figure {
+        height: 138px;
+      }
+
+      &.first {
+        animation: .5s linear 0s first-game;
+      }
+
+      &.second {
+        animation: 1s linear 0s second-game;
+      }
+    }
+  }
 }
 
-@keyframes rock-tr { from { left:78px; opacity: 0.7 } to { left:0; opacity: 1}  }
+@keyframes rock-tr {
+  from {
+    left: 78px;
+    opacity: 0.7
+  }
+  to {
+    left:0;
+    opacity: 1
+  }
+}
 
-@keyframes paper-tr { from { right:78px; opacity: 0.7  } to { right:0; opacity: 1}  }
+@keyframes paper-tr {
+  from {
+    right:78px;
+    opacity: 0.7
+  }
+  to {
+    right:0;
+    opacity: 1
+  }
+}
 
 @keyframes scissors-tr { from { top:-78px; opacity: 0.7  } to { top:0; opacity: 1}  }
 
@@ -348,209 +363,210 @@ $f-weight-bold: 700;
 @keyframes spock-pent { from { right:78px; opacity: 0.7  } to { right:0; opacity: 1}  }
 
 @keyframes first-game { 
-    from { top: 50px; opacity: 0 } 
-    to { top: 0;  opacity: 1}  
+  from { top: 50px; opacity: 0 }
+  to { top: 0;  opacity: 1}
 }
 
 @keyframes second-game { 
-    0% { opacity: 0; top: 50px }
-    25% {  opacity: 0; top: 50px}
-    50% { opacity: 0;  top: 50px}
-    100% { top: 0;  opacity: 1}  
-  }
+  0% { opacity: 0; top: 50px }
+  25% {  opacity: 0; top: 50px}
+  50% { opacity: 0;  top: 50px}
+  100% { top: 0;  opacity: 1}
+}
 
-  @keyframes message { 
-    0% { opacity: 0;pointer-events: none;}
-    25% {  opacity: 0;}
-    50% { opacity: 0;}
-    100% { opacity: 1; pointer-events: all;}  
-  }
+@keyframes message {
+  0% { opacity: 0;pointer-events: none;}
+  25% {  opacity: 0;}
+  50% { opacity: 0;}
+  100% { opacity: 1; pointer-events: all;}
+}
 
-  @media screen and (max-width: 767px) {
-    .game {
-        padding: 18px 0;
+@media screen and (max-width: 767px) {
+  .game {
+    padding: 18px 0;
 
-        &__box {
-            width: 315px;
-            height: 400px;
+    &__box {
+      width: 315px;
+      height: 400px;
 
-            &.triangle {
-                margin-top: 86px;
-                background-position: 60px 60px;
-                background-size: 65%;
+      &.triangle {
+        margin-top: 86px;
+        background-position: 60px 60px;
+        background-size: 65%;
 
-                .circle.scissors {
-                    margin-right: 92px;
-                }
-            }
-
-            &.pentagon {
-                width: 315px;
-                margin-top: 67px;
-                background-size: 67%;
-                background-position: 54px 55px;
-
-                .circle {
-                    width: 96px;
-                    height: 96px;
-
-                    &:after {
-                        margin: 0 12px;
-                        width: 73px;
-                        height: 67px;                    
-                    }
-
-                    &:before {
-                        width: 40px;
-                        height: 40px;
-                    }
-
-                    &.rock:before {
-                        height: 40px;
-                    }
-
-                    &.paper:before {
-                        height: 48px;
-                    }
-
-                    &.scissors:before {
-                        height: 46px;
-                    }
-
-                    &.lizard:before {
-                        height: 38px;
-                    }
-
-                    &.spock:before {
-                        height: 50px;
-                    }
-
-                    &.lizard {
-                        margin-top: 114px;
-                        margin-left: 44px;
-                    }
-
-                    &.spock {
-                        margin-top: -95px;
-                        margin-right: 45px;                    
-                    }
-                }
-            }
-
-            .circle {
-                padding-top: 22px;
-                width: 127px;
-                height: 122px;
-
-                &:after {
-                    margin: 0px 13px;
-                    width: 99px;
-                    height: 91px;
-                }
-
-                &:before {
-                    width: 46px;
-                }
-
-                &.rock:before {
-                    height: 46px;
-                }
-
-                &.scissors:before {
-                    height: 52px;
-                }
-
-                &.paper:before {
-                    height: 55px;
-                }
-
-                &.spock:before {
-                    height: 59px;
-                }
-
-                &.lizard:before {
-                    height: 44px;
-                }
-            }
+        .circle.scissors {
+          margin-right: 92px;
         }
+      }
 
-        .field {
-            margin: 34px auto;
-            padding: 18px 0;
-            justify-content: space-evenly;
+      &.pentagon {
+        width: 315px;
+        margin-top: 67px;
+        background-size: 67%;
+        background-position: 54px 55px;
 
-            .box {
-                flex-direction: column-reverse;
-                display: flex;
-            }
+        .circle {
+          width: 96px;
+          height: 96px;
 
-            .title {
-                margin-top: 34px;
-                font-size: 15px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
+          &:after {
+            margin: 0 12px;
+            width: 73px;
+            height: 67px;
+          }
 
-            .message.desc {
-                display: none;
-            }
+          .figure {
+            width: 50px;
+            height: 50px;
+            background-size: 38px !important;
+          }
 
-            .circle {
-                padding-top: 21px;
-                margin-top: 32px;
-                width: 128px;
-                height: 122px;
+          &.rock .figure {
+            height: 40px;
+          }
 
-                &:after {
-                    margin: 0px 12px;
-                    width: 104px;
-                    height: 91px;
-                }
+          &.paper .figure {
+            height: 48px;
+          }
 
-                &:before {
-                    width: 46px;
-                }
+          &.scissors .figure {
+            height: 46px;
+          }
 
-                &.rock:before {
-                    height: 46px;
-                }
+          &.lizard .figure {
+            height: 38px;
+          }
 
-                &.scissors:before {
-                    height: 52px;
-                }
+          &.spock .figure {
+            height: 50px;
+          }
 
-                &.paper:before {
-                    height: 55px;
-                }
+          &.lizard {
+            margin-top: 114px;
+            margin-left: 44px;
+          }
 
-                &.spock:before {
-                    height: 59px;
-                }
-
-                &.lizard:before {
-                    height: 44px;
-                }
-            }
+          &.spock {
+            margin-top: -95px;
+            margin-right: 45px;
+          }
         }
+      }
 
-        .message {
-            &.mob {
-                justify-content: center;
-                display: flex;
-                .title {
-                    margin-top: 21px;
-                    font-size: 51px;
-                    text-transform: uppercase;
-                    color: $col-white;
-                    text-align: center;
-                }
+      .circle {
+            padding-top: 22px;
+            width: 127px;
+            height: 122px;
 
-                button {
-                    width: 218px;
-                    margin: 19px auto 40px;
-                }
+            &:after {
+                margin: 0 13px;
+                width: 99px;
+                height: 91px;
             }
+
+          .figure {
+            width: 46px;
+          }
+
+          &.rock .figure {
+            height: 46px;
+          }
+
+          &.scissors .figure {
+            height: 52px;
+          }
+
+          &.paper .figure {
+            height: 55px;
+          }
+
+          &.spock .figure {
+            height: 59px;
+          }
+
+          &.lizard .figure {
+            height: 44px;
+          }
         }
     }
+
+    .field {
+      margin: 34px auto;
+      padding: 18px 0;
+      justify-content: space-evenly;
+
+      .box {
+        flex-direction: column-reverse;
+        display: flex;
+      }
+
+      .title {
+        margin-top: 34px;
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .message.desc {
+        display: none;
+      }
+
+      .circle {
+        padding-top: 21px;
+        margin-top: 32px;
+        width: 128px;
+        height: 122px;
+
+        &:after {
+          margin: 0 12px;
+          width: 104px;
+          height: 91px;
+        }
+
+        .figure {
+          width: 46px;
+        }
+
+        &.rock .figure {
+          height: 46px;
+        }
+
+        &.scissors .figure {
+          height: 52px;
+        }
+
+        &.paper .figure {
+          height: 55px;
+        }
+
+        &.spock .figure {
+          height: 59px;
+        }
+
+        &.lizard .figure {
+          height: 44px;
+        }
+      }
+    }
+
+    .message {
+      &.mob {
+        justify-content: center;
+        display: flex;
+        .title {
+          margin-top: 21px;
+          font-size: 51px;
+          text-transform: uppercase;
+          color: $col-white;
+          text-align: center;
+        }
+
+        button {
+          width: 218px;
+          margin: 19px auto 40px;
+        }
+      }
+    }
   }
+}
